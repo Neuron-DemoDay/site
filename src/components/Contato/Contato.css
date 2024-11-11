@@ -1,0 +1,104 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: var(--room-color);
+    width: 80%; /* Aumenta a largura do formulário */
+    max-width: 1200px; /* Aumenta o tamanho máximo */
+    margin: 0 auto;
+    font-family: var(--primary-font);
+    min-height: 600px; /* Aumenta a altura mínima */
+    height: auto;
+}
+
+.contato h2 {
+    font-size: 3rem; /* Aumenta o tamanho do título */
+    color: var(--third-color);
+    margin-bottom: 1.5rem; /* Aumenta o espaçamento inferior */
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.form-container {
+    width: 100%;
+    padding: 30px; /* Aumenta o padding dentro do formulário */
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome,
+.email,
+.mensagem {
+    margin-bottom: 1.5rem; /* Aumenta o espaçamento entre os campos */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease; /* Transição suave */
+    background-color: var(--room-color);
+    font-family: var(--secondary-font);
+    width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 1rem; /* Tamanho inicial do placeholder */
+    transition: font-size 0.3s ease; /* Transição suave para o placeholder */
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    font-size: 0.875rem; /* Tamanho do placeholder ao focar */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px; /* Aumenta a altura mínima da área de texto */
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    padding: 16px 28px;
+    font-size: 1.2rem;
+    background: rgba(180, 15, 231, 0.56);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: var(--third-font);
+    width: 100%;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+button:hover {
+    background-color: rgba(180, 15, 231, 0.7);
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: rgba(180, 15, 231, 0.8);
+}

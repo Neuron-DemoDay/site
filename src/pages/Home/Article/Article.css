@@ -1,0 +1,48 @@
+.article {
+    position: relative; 
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.article-title {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-family: var(--primary-font);
+}
+
+.article-description {
+    font-size: 1.3rem;
+    color: var(--third-color);
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-family: var(--secondary-font);
+}
+
+.video-placeholder {
+    /* width: 100%;
+    max-width: 500px;
+    height: 280px; */
+    background-color: #8c8c8c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 889px;
+    height: 445.891px;
+    flex-shrink: 0;
+}
+
+.play-icon {
+    font-size: 3rem;
+    color: white;
+}
+
+.meialuacoral {
+    position: absolute; 
+    top: 300px; 
+    left: -30px; 
+    /* bottom: 500px;  */
+}

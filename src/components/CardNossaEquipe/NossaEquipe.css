@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.card-time {
+    width: 45vh;
+    height: 45vh;
+    border-radius: 30px;
+    border: 4px solid #0F6DE7;
+    background: rgba(15, 109, 231, 0.29);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+    margin-top: 15vh;
+}
+
+.circle {
+    position: absolute;
+    top: -25%;
+    width: 24vh;
+    height: 24vh;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #0F6DE7;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-time h2 {
+    color: #0F6DE7;
+    font-family: Inter, sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.card-time h3 {
+    color: #0B4591;
+    font-family: Inter, sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.card-time p {
+    color: #0B4591;
+    font-family: Inter, sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.social-media {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+.social-media p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 6px;
+    border-radius: 25px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.linkedin {
+    background-color: #0A66C2;
+}
+
+.github {
+    background-color: #000;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.time1 {
+    display: flex;
+    gap: 30px;
+}
+
+.time2 {
+    display: flex;
+    gap: 30px;
+}

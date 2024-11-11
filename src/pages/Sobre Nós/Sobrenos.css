@@ -1,0 +1,224 @@
+.sobre-nos {
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.sobre-nos h1 {
+    color: #2A1E4E;
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.sobre-nos-subtitulo {
+    color: #2A1E4E;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.sobre-nos-imagens {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bonecos-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.nossos-valores {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.nossos-valores h2 {
+    font-size: 36px;
+    color: #2A1E4E;
+    font-family: Inter;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 40vh;
+    height: 40vh;
+    perspective: 1000px;
+}
+
+.card-front,
+.card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #EEF5DB;
+    background: linear-gradient(180deg, #FE5F55 0%, #D65048 43.5%);
+    border-radius: 8px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    font-family: Poppins;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .card-front {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+.card p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    color: #EEF5DB;
+}
+
+.card-back p {
+    font-size: 16px;
+    color: #EEF5DB;
+    margin: 0;
+    text-align: center;
+}
+
+.icon-container {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.card-back ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+}
+
+.card-back li {
+    font-size: 16px;
+}
+
+.card-equipe {
+    background: linear-gradient(90deg, #87DEF8 0%, #3EBEE5 100%);
+    border-radius: 40px;
+    padding: 20px;
+    color: #EEF5DB;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 15px 100px;
+}
+
+.card-equipe h2 {
+    color: #06408B;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.card-equipe p {
+    color: #2A1E4E;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.equipe-desenvolvimento h3 {
+    color: #1371EA;
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 90px;
+}
+
+.equipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.card-neuron {
+    background-color: var(--fifth-color);
+    border-radius: 40px;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: left;
+}
+
+.card-neuron h2 {
+    color: var(--room-color);
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+
+.card-neuron p {
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 0;
+    color: var(--room-color);
+}
+
+.card-neuron img {
+    width: 40vh;
+    height: 40vh;
+}

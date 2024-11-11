@@ -1,0 +1,87 @@
+.ia-container {
+  padding: 60px 30px; 
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+.ia-title {
+  color: #1f4e79; 
+  font-size: 45px; 
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.ia-content {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center; 
+  background-color: #b3d4ff; 
+  padding: 40px; 
+  border-radius: 50px; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  position: relative; 
+  flex-wrap: wrap; /* Garante que o conteúdo se ajuste bem em telas menores */
+  gap: 20px; /* Espaçamento entre os elementos */
+}
+
+.ia-avatar {
+  width: 400px; 
+  height: auto;
+  position: relative;
+  top: 40px; 
+  left: -40px;
+  border-radius: 10px;
+  margin-left: 20px; 
+  z-index: 1; 
+}
+
+.ia-features {
+  color: var(--third-color); 
+  font-size: 23px; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+  max-width: 500px; 
+}
+
+@media (max-width: 768px) {
+  .ia-content {
+      flex-direction: column; /* Organiza os itens verticalmente em telas menores */
+      align-items: center; /* Alinha os itens ao centro */
+      padding: 20px; /* Reduz o padding em telas menores */
+  }
+
+  .ia-avatar {
+      width: 300px; /* Ajusta a largura da imagem do avatar */
+      top: 0; /* Remove o deslocamento em telas menores */
+      left: 0; /* Centraliza a imagem */
+      margin-left: 0; /* Remove o espaço à esquerda */
+  }
+
+  .ia-title {
+      font-size: 35px; /* Reduz o tamanho do título em telas menores */
+      margin-bottom: 20px; /* Ajusta o espaçamento abaixo do título */
+  }
+
+  .ia-features {
+      font-size: 18px; /* Ajusta o tamanho da fonte da lista de recursos */
+      max-width: 100%; /* Garante que a lista ocupe a largura disponível */
+      padding: 0 20px; /* Adiciona espaçamento nas laterais */
+  }
+}
+
+@media (max-width: 480px) {
+  .ia-title {
+      font-size: 28px; /* Ajuste do título para telas muito pequenas */
+  }
+
+  .ia-features {
+      font-size: 16px; /* Mais redução no tamanho da fonte */
+  }
+
+  .ia-avatar {
+      width: 250px; /* Ajuste da imagem para telas muito pequenas */
+  }
+}

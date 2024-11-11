@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.header-content {
+  text-align: center;
+  max-width: 150vh;
+  position:absolute;
+
+}
+
+
+.header-title {
+  /* font-size: 1.rem; */
+  color: #2A1E4E;
+  margin-bottom: 10px;
+  font-family: var(--primary-font);
+  font-size: 300%;
+  z-index: 2px;;
+  
+
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  color: var(--third-color);
+  margin-bottom: 20px;
+  font-family: var(--primary-font);
+  font-size: 150%;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.header-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  
+}
+
+.cadastre-se {
+  background-color: rgba(180, 15, 231, 1);
+  color: white;
+}
+
+.saiba-mais {
+  background-color: rgba(180, 15, 231, 1);
+  color: white;
+
+}
+
+.header-button:hover {
+  opacity: 0.8;
+  transform: scale(1.1)
+}
+
+.aviaobola{
+  position:relative;
+  left: 90vh;
+  bottom: 40vh;
+ 
+}
+
+.livroshome{
+  right: 170vh;
+  top: 60vh;
+  position: absolute;
+}

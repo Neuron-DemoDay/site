@@ -1,0 +1,168 @@
+/* Estilo para o container principal */
+.banner-home {
+  background-color: transparent; /* Correção de 'none' para 'transparent' */
+  padding: 60px; /* Aumentado de 40px para 60px */
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1200px; /* Aumentado de 800px para 1200px */
+  text-align: center;
+  position: relative; /* Necessário para a posição absoluta da bola */
+}
+
+/* Estilo para o título fora da caixa azul */
+.banner-title {
+  font-size: 2.4rem; /* Aumentado de 1.8rem para 2.4rem */
+  color: var(--secondary-color); 
+  font-family: var(--primary-font);
+  font-weight: bold;
+  margin-bottom: 30px; /* Aumentado de 20px para 30px */
+}
+
+/* Estilo para o conteúdo dentro da caixa azul */
+.banner-content {
+  background-color: rgba(126, 200, 222, 1);
+  padding: 30px; /* Aumentado de 20px para 30px */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--secondary-font);
+  height: 450px; /* Aumentado de 300px para 500px */
+  width: 100%; /* Ajusta a largura ao container pai */
+  box-sizing: border-box; /* Inclui padding na largura total */
+  margin: 0 auto; /* Centraliza o conteúdo dentro do container */
+}
+
+/* Estilo para a descrição do banner */
+.banner-description {
+  font-size: 1.4rem; /* Aumentado de 1.2rem para 1.4rem */
+  line-height: 1.6; /* Aumentado de 1.5 para 1.6 */
+  flex: 1;
+  color: var(--third-color);
+  margin-right: 30px; /* Aumentado de 20px para 30px */
+  margin-left: 30px;
+}
+
+/* Estilo para a imagem do banner */
+.banner-image {
+  width: 350px; /* Aumentado de 250px para 350px */
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  bottom: -27px;
+}
+
+/* Ajuste para a bola azul */
+.bolaazul {
+  border-radius: 50%; /* Forma circular */
+  position: absolute; /* Posiciona a bola fora do fluxo */
+  top: 10%; /* Centraliza verticalmente dentro do container */
+  right: -200px; /* Move a bola 200px para fora do container à direita */
+  transform: translateY(-50%); /* Centraliza verticalmente a partir do centro */
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets e desktops médios */
+@media (max-width: 1200px) {
+  .banner-home {
+    max-width: 1000px;
+    padding: 50px;
+  }
+
+  .banner-title {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+
+  .banner-content {
+    height: 450px;
+    padding: 25px;
+  }
+
+  .banner-description {
+    font-size: 1.3rem;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  .banner-image {
+    width: 300px;
+    bottom: -40px;
+  }
+
+  .bolaazul {
+    right: -150px; /* Ajuste para telas menores */
+  }
+}
+
+/* Tablets pequenos e desktops menores */
+@media (max-width: 900px) {
+  .banner-home {
+    max-width: 800px;
+    padding: 40px;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .banner-description {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .banner-image {
+    width: 250px;
+    bottom: 0;
+    margin-top: 20px;
+  }
+
+  .bolaazul {
+    right: -100px; /* Ajuste para telas menores */
+  }
+}
+
+/* Dispositivos móveis */
+@media (max-width: 600px) {
+  .banner-home {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .banner-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .banner-description {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .banner-image {
+    width: 200px;
+    bottom: 0;
+    margin-top: 15px;
+  }
+
+  .bolaazul {
+    right: -80px; /* Ajuste para telas menores */
+  }
+}

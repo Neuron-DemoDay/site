@@ -1,0 +1,101 @@
+.anuncio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 60px;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  /* Para garantir boa visualização em telas menores, a largura é ajustada com o max-width */
+}
+
+.anuncio-content {
+  max-width: 60%;
+}
+
+.anuncio-content h2 {
+  color: #241E4E;
+  font-size: 2em;
+  margin: 0 0 10px;
+  font-family: var(--primary-font);
+}
+
+.anuncio-content p {
+  color: #241E4E;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: var(--secondary-font);
+}
+
+.anuncio-content button {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.anuncio-content button:hover {
+  background-color: #e14c4f;
+}
+
+.anuncio-avatar {
+  width: 120px;
+  height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .anuncio-container {
+      flex-direction: column; /* Alinha os itens na vertical em telas menores */
+      padding: 30px; /* Reduz o padding em telas menores */
+  }
+
+  .anuncio-content {
+      max-width: 100%; /* Faz com que a seção de conteúdo ocupe toda a largura disponível */
+      text-align: center; /* Garante que o texto fique centralizado */
+  }
+
+  .anuncio-content h2 {
+      font-size: 1.8em; /* Reduz o tamanho da fonte do título */
+  }
+
+  .anuncio-content p {
+      font-size: 1.5rem; /* Reduz o tamanho da fonte do parágrafo */
+  }
+
+  .anuncio-content button {
+      font-size: 0.9em; /* Ajuste do tamanho da fonte do botão */
+      padding: 8px 16px; /* Ajuste no padding do botão */
+  }
+
+  .anuncio-avatar {
+      width: 100px; /* Ajusta o tamanho da imagem do avatar */
+  }
+}
+
+@media (max-width: 480px) {
+  .anuncio-content h2 {
+      font-size: 1.5em; /* Mais redução para telas pequenas */
+  }
+
+  .anuncio-content p {
+      font-size: 1.3rem; /* Ajuste no tamanho da fonte para telas pequenas */
+  }
+
+  .anuncio-content button {
+      font-size: 0.8em; /* Reduz ainda mais o tamanho da fonte do botão */
+  }
+
+  .anuncio-avatar {
+      width: 90px; /* Ajuste do tamanho da imagem em telas pequenas */
+  }
+}

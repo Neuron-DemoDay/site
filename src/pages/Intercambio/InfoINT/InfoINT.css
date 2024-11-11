@@ -1,0 +1,156 @@
+.info-container {
+  background-color: #f5f8e8; /* Cor de fundo */
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 20px;
+  border: 6px solid #fe5f55;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 10vh;
+}
+
+.info-title {
+  color: var(--primary-color);
+  font-size: 45px;
+  font-weight: bold;
+  font-family: var(--primary-font);
+}
+
+.info-description {
+  color: #4b4b4b; /* Cor da descrição */
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.info-image {
+  width: 100%; /* Torna a imagem responsiva */
+  max-width: 618px; /* Limita o tamanho máximo da imagem */
+  margin: 20px 0;
+}
+
+.info-subtitle {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.info-circles {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap; /* Permite que os círculos se ajustem em telas menores */
+}
+
+.info-circle {
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 15px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  width: 15vh;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  min-width: 120px; /* Garante que os círculos não fiquem muito pequenos */
+}
+
+.info-footer {
+  color: var(--third-color);
+  font-size: 30px;
+  margin: 20px 0;
+  font-family: var(--secondary-font);
+}
+
+.access-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 11px 19px;
+  font-size: 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.access-button:hover {
+  background-color: #e14c4f;
+}
+
+@media (max-width: 768px) {
+  .info-title {
+      font-size: 35px; /* Reduz o tamanho do título em telas menores */
+  }
+
+  .info-description {
+      font-size: 20px; /* Ajusta o tamanho da descrição em telas menores */
+  }
+
+  .info-image {
+      max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+  }
+
+  .info-subtitle {
+      font-size: 30px; /* Ajusta o tamanho do subtítulo em telas menores */
+  }
+
+  .info-circles {
+      gap: 10px; /* Reduz o espaço entre os círculos em telas menores */
+  }
+
+  .info-circle {
+      width: 12vh;
+      height: 12vh;
+      font-size: 14px; /* Reduz o tamanho da fonte nos círculos */
+  }
+
+  .info-footer {
+      font-size: 24px; /* Ajusta o tamanho da fonte do rodapé */
+  }
+
+  .access-button {
+      font-size: 20px; /* Reduz o tamanho da fonte do botão */
+      padding: 10px 15px; /* Ajusta o padding do botão */
+  }
+}
+
+@media (max-width: 480px) {
+  .info-title {
+      font-size: 28px; /* Ajuste do título para telas muito pequenas */
+  }
+
+  .info-description {
+      font-size: 18px; /* Ajuste da descrição para telas pequenas */
+  }
+
+  .info-image {
+      max-width: 100%; /* Garante que a imagem se ajuste bem */
+  }
+
+  .info-subtitle {
+      font-size: 26px; /* Ajuste do subtítulo */
+  }
+
+  .info-circle {
+      width: 100px; /* Ajuste do tamanho do círculo */
+      height: 100px;
+      font-size: 12px; /* Ajuste da fonte dentro do círculo */
+  }
+
+  .info-footer {
+      font-size: 20px; /* Ajuste do tamanho da fonte do rodapé */
+  }
+
+  .access-button {
+      font-size: 18px; /* Ajusta o tamanho da fonte do botão */
+      padding: 8px 12px; /* Ajuste do padding */
+  }
+}

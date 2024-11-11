@@ -1,0 +1,126 @@
+.finalizacao-container {
+  display: flex;
+  flex-direction: row; /* Alinha os itens lado a lado */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 20px; /* Adicionado padding para espaçamento interno */
+}
+
+.finalizacao-content {
+  text-align: center;
+  max-width: 70%;
+  margin: 0;
+  position: relative;
+  left: 105px;
+}
+
+.finalizacao-content h2 {
+  font-size: 2rem;
+  color: var(--third-color);
+  font-family: var(--primary-font);
+  margin: 0; /* Remove margem para evitar espaço extra */
+}
+
+.finalizacao-content p {
+  font-size: 1.4rem;
+  color: var(--third-color);
+  font-family: var(--secondary-font);
+  margin: 0; /* Remove margem para evitar espaço extra */
+  margin-top: 20px;
+}
+
+.finalizacao-button {
+  background-color: var(--primary-color);
+  color: #FFF;
+  border: none;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  padding: 12px 30px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  white-space: nowrap;
+  text-align: center;
+  margin: 0; /* Remove margem para evitar espaço extra */
+  margin-top: 20px;
+}
+
+.finalizacao-button:hover {
+  background-color: #E04E44;
+}
+
+.finalizacao-image img {
+  width: 300px;
+  border-radius: 50%;
+  margin: 0; /* Remove margem para evitar espaço extra */
+  position: relative;
+  top: 40px;
+  left: 35px;
+  z-index: -1; /* Muda o z-index para -1 para colocar a imagem atrás dos outros elementos */
+}
+
+/* MEDIA QUERY - Para telas pequenas (móveis e tablets) */
+@media (max-width: 768px) {
+  .finalizacao-container {
+      flex-direction: column; /* Muda para coluna em telas menores */
+      gap: 15px;
+  }
+
+  .finalizacao-content {
+      max-width: 80%;
+  }
+
+  .finalizacao-content h2 {
+      font-size: 2.5rem;
+  }
+
+  .finalizacao-content p {
+      font-size: 1.3rem;
+  }
+
+  .finalizacao-button {
+      padding: 15px 30px;
+      font-size: 1.3rem;
+  }
+
+  .finalizacao-image img {
+      width: 200px;
+  }
+}
+
+/* MEDIA QUERY - Para telas muito pequenas (celulares menores) */
+@media (max-width: 480px) {
+  .finalizacao-container {
+      gap: 10px;
+  }
+
+  .finalizacao-content {
+      max-width: 90%;
+  }
+
+  .finalizacao-content h2 {
+      font-size: 2rem;
+  }
+
+  .finalizacao-content p {
+      font-size: 1.1rem;
+  }
+
+  .finalizacao-button {
+      padding: 12px 25px;
+      font-size: 1.2rem;
+  }
+
+  .finalizacao-image img {
+      width: 180px;
+  }
+}
+
+/* Oculta a seção se estiver vazia */
+.finalizacao-container:empty {
+  display: none;
+}

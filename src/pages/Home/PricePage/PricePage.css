@@ -1,0 +1,171 @@
+.price-page { 
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  font-family: var(--primary-font);
+  background-color: #EEF5DB;
+  flex-wrap: wrap; 
+}
+
+.plan {
+  border: 5px solid transparent;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 350px;
+  min-height: 500px; 
+  text-align: center;
+  background-color: none;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+}
+
+.plan-header {
+  height: 70px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  margin-bottom: 1.2rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: rgba(180, 15, 231, 1);
+}
+
+.price {
+  display: flex;
+  padding: 0.75rem 5rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;  
+  color: rgb(180, 121, 198);
+  border: 3px solid transparent;
+  width: 250px; 
+  text-align: center;
+  align-self: center;
+}
+
+.neuronal .price {
+  color: rgba(180, 15, 231, 1);
+  border-color: rgba(180, 15, 231, 1);
+  position: relative;
+  bottom: 29px;
+  top: -10;
+}
+
+.quantico .price {
+  color: var( --primary-color);
+  border-color: var( --primary-color);
+  position: relative;
+  bottom: 29px;
+}
+
+.cognitivo .price {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  position: relative;
+  bottom: 29px;
+  top: -10;
+  
+}
+
+.neuronal {
+  border-color: rgba(180, 15, 231, 1);
+}
+
+.quantico {
+  border-color: var( --primary-color);
+ 
+}
+
+.cognitivo {
+  border-color: var(--secondary-color)
+}
+
+.quantico .plan-header {
+  background-color: var( --primary-color);
+}
+
+.cognitivo .plan-header {
+  background-color: var(--secondary-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;  
+}
+
+li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+li .check-icon,
+li .cancel-icon {
+  font-size: 1.5rem;  
+  margin-right: 0.75rem;  
+  flex-shrink: 0;  
+}
+
+.check-icon {
+  color: green;
+}
+
+.cancel-icon {
+  color: red;
+}
+.plan-btn {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.neuronal-btn {
+  background-color: var(--fifth-color);
+}
+
+.neuronal-btn:hover {
+  background-color: rgba(180, 15, 231, 1); /* Cor roxa para o plano neuronal */
+}
+
+.quantico-btn {
+  background-color: var(--primary-color); /* Cor original do plano quântico */
+}
+
+.quantico-btn:hover {
+  background-color: #fe6f66; /* Um tom mais escuro do plano quântico ao passar o mouse */
+}
+
+.cognitivo-btn {
+  background-color: var(--secondary-color); /* Cor original do plano cognitivo */
+}
+
+.cognitivo-btn:hover {
+  background-color: #3a9dfc; /* Um tom mais escuro para o plano cognitivo ao passar o mouse */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .price-page {
+    flex-direction: column;
+    align-items: center; 
+  }
+}

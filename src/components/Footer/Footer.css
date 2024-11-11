@@ -1,0 +1,334 @@
+FOOTER CSS
+
+.footer {
+  width: 100%;
+  font-family: Jost;
+  background-color: var(--third-color);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+}
+
+.footer p {
+  position: relative;
+  top: 10px;
+  font-size: 0.8rem;
+  opacity: 70%;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo-image {
+  width: 100px;
+  height: auto;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-links {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+/* Remover a cor azul e sublinhado dos links */
+.footer a {
+  color: inherit;
+  /* Herda a cor do elemento pai */
+  text-decoration: none;
+  /* Remove o sublinhado */
+}
+
+/* Efeito de hover nos links */
+.footer a:hover {
+  color: white;
+  /* Mantém a cor branca ao passar o mouse */
+  text-decoration: underline;
+  /* Adiciona sublinhado no hover, se desejado */
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-section h3 {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  color: #a0a0a0;
+  font-size: 1em;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Estilo para as li com links */
+.footer-section li a {
+  color: #a0a0a0;
+  font-size: 1em;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-section li a:hover {
+  color: white;
+  text-decoration: underline;
+  /* Estilo de hover */
+}
+
+
+/* TELAS CELULARES */
+@media (max-width: 576px) {
+  .footer {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .footer-links {
+    margin: 0;
+    gap: 20px;
+  }
+
+  .footer-logo-image {
+    display: none;
+  }
+
+  .footer-section h3 {
+    font-size: 0.9rem;
+  }
+
+  .footer-section li {
+    font-size: 0.8rem;
+  }
+
+  .footer p {
+    font-size: 0.7rem;
+    text-align: start;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .footer-socials {
+    font-size: 1.3rem;
+    gap: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 354px) {
+  .footer {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .footer-links {
+    margin: 0;
+    gap: 20px;
+  }
+
+  .footer-logo-image {
+    display: none;
+  }
+
+  .footer-section h3 {
+    font-size: 0.6rem;
+  }
+
+  .footer-section li {
+    font-size: 0.6rem;
+  }
+
+  .footer p {
+    font-size: 0.5rem;
+    text-align: start;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .footer-socials {
+    font-size: 1rem;
+    gap: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+  }
+}
+
+/* TABLET TELAS MENORES */
+@media (min-width: 577px) and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .footer-links {
+    margin: 0;
+    gap: 50px;
+  }
+
+  .footer-logo-image {
+    display: none;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-section li {
+    font-size: 1.1rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+    text-align: start;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .footer-socials {
+    font-size: 1.8rem;
+    gap: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+  }
+}
+
+/* TABLET TELAS GRANDES */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    width: 100%;
+    padding: 30px 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .footer-links {
+    margin: 0;
+    gap: 80px;
+  }
+
+  .footer-logo-image {
+    display: none;
+  }
+
+  .footer-section h3 {
+    font-size: 1.4rem;
+  }
+
+  .footer-section li {
+    font-size: 1.4rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    text-align: start;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .footer-socials {
+    font-size: 2.5rem;
+    gap: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+  }
+}
+
+/* TELAS GRANDES */
+
+@media (min-width: 1441px) {
+  .footer {
+    width: 100%;
+    padding: 30px 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .footer-links {
+    margin: 0;
+    gap: 100px;
+  }
+
+  .footer-section h3 {
+    font-size: 2rem;
+  }
+
+  .footer-section li {
+    font-size: 1.7rem;
+  }
+
+  .footer p {
+    font-size: 1.3rem;
+    text-align: start;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .footer-logo {
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo-image {
+    width: 150px;
+    height: auto;
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    font-size: 3em;
+    margin-top: 20px;
+  }
+}

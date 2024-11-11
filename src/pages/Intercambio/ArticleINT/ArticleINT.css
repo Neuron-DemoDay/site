@@ -1,0 +1,72 @@
+.article-container {
+  background-color: none;
+  padding: 20px;
+  max-width: 100%; /* Corrigido para 100% da largura disponível */
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.article-title {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: var(--primary-font);
+}
+
+.article-text {
+  font-size: 1.7rem;
+  color: var(--third-color);
+  font-family: var(--secondary-font);
+  line-height: 1.5; /* Adicionando line-height para melhorar a legibilidade */
+}
+
+.article-text strong {
+  font-weight: bold;
+}
+
+strong {
+  color: var(--primary-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .article-title {
+      font-size: 2.5rem;
+  }
+
+  .article-text {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-container {
+      padding: 15px;
+      margin-top: 5vh; /* Ajustando o espaçamento superior em telas menores */
+  }
+
+  .article-title {
+      font-size: 2rem;
+  }
+
+  .article-text {
+      font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-container {
+      padding: 10px;
+      margin-top: 3vh; /* Mais compacto para dispositivos móveis */
+  }
+
+  .article-title {
+      font-size: 1.8rem;
+  }
+
+  .article-text {
+      font-size: 1.2rem;
+  }
+}
