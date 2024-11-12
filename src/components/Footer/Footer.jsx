@@ -1,5 +1,3 @@
-// FOOTER JSX
-
 import React from 'react';
 import './Footer.css';
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";

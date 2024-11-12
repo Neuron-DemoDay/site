@@ -1,63 +1,58 @@
-.sobre-nos {
-    padding: 20px;
+.sobre-nos h1 {
     text-align: center;
+    color: var(--third-color);
+    font-family: Inter;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: normal;
     margin-top: 60px;
 }
 
-.sobre-nos h1 {
-    color: #2A1E4E;
-    font-family: Inter;
-    font-size: 60px;
-    font-weight: 800;
-    line-height: normal;
-}
-
 .sobre-nos-subtitulo {
-    color: #2A1E4E;
+    color: var(--third-color);
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 30px;
+    padding: 50px;
+    margin-bottom: -60px;
 }
 
 .sobre-nos-imagens {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .bonecos-image {
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
 }
 
 .nossos-valores {
-    margin-top: 40px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 120px;
 }
 
-.nossos-valores h2 {
-    font-size: 36px;
-    color: #2A1E4E;
+.titulo-valores {
+    font-size: 3.5rem;
+    color: var(--third-color);
     font-family: Inter;
     font-weight: 700;
     margin-bottom: 30px;
-}
-
-.cards-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    text-align: center;
 }
 
 .card {
     width: 40vh;
     height: 40vh;
     perspective: 1000px;
+}
+
+.cards-valores {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card-front,
@@ -69,13 +64,13 @@
     width: 100%;
     height: 100%;
     padding: 20px;
-    color: #EEF5DB;
+    color: var(--room-color);
     background: linear-gradient(180deg, #FE5F55 0%, #D65048 43.5%);
     border-radius: 8px;
     position: absolute;
     backface-visibility: hidden;
     transition: transform 0.6s ease;
-    font-family: Poppins;
+    font-family: var(--secondary-font);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -101,55 +96,54 @@
 }
 
 .card h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: 0;
     text-align: center;
 }
 
 .card p {
-    font-size: 16px;
+    font-size: 1.1rem;
     text-align: center;
     line-height: 1.5;
-    color: #EEF5DB;
+    color: var(--room-color)
 }
 
 .card-back p {
-    font-size: 16px;
-    color: #EEF5DB;
+    font-size: 1rem;
+    color: var(--room-color);
     margin: 0;
     text-align: center;
 }
 
 .icon-container {
-    font-size: 40px;
+    font-size: 7vh;
     margin-bottom: 10px;
 }
 
 .card-back ul {
-    list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-left: 20px;
     text-align: start;
 }
 
 .card-back li {
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 .card-equipe {
     background: linear-gradient(90deg, #87DEF8 0%, #3EBEE5 100%);
     border-radius: 40px;
     padding: 20px;
-    color: #EEF5DB;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin: 15px 100px;
+    margin: 100px;
+    margin-bottom: 40px;
 }
 
 .card-equipe h2 {
     color: #06408B;
-    font-family: Inter;
-    font-size: 35px;
+    font-family: var(--primary-font);
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -157,32 +151,20 @@
 }
 
 .card-equipe p {
-    color: #2A1E4E;
+    color: var(--third-color);
     text-align: center;
     font-family: Poppins;
-    font-size: 25px;
+    font-size: 1.7rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.equipe-desenvolvimento h3 {
-    color: #1371EA;
-    font-family: Inter;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin-top: 90px;
-}
-
-.equipe-container {
+.equipe-desenvolvimento {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 110px;
 }
 
 .card-neuron {
@@ -198,6 +180,7 @@
     margin: 0 auto;
     gap: 20px;
     text-align: left;
+    margin-bottom: 50px;
 }
 
 .card-neuron h2 {
@@ -221,4 +204,642 @@
 .card-neuron img {
     width: 40vh;
     height: 40vh;
+}
+
+/* */
+@media (max-width: 420px) {
+    .sobre-nos h1 {
+        text-align: center;
+        color: var(--third-color);
+        font-family: Inter;
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: normal;
+        margin-top: 60px;
+    }
+
+    .sobre-nos-subtitulo {
+        color: var(--third-color);
+        font-family: Poppins;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 50px;
+        margin-bottom: 0px;
+    }
+
+    .sobre-nos-imagens {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .bonecos-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nossos-valores {
+        margin-bottom: 100px;
+    }
+
+    .titulo-valores {
+        font-size: 2.5rem;
+        color: var(--third-color);
+        font-family: Inter;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .card {
+        width: 18vh;
+        height: 20vh;
+        perspective: 1000px;
+    }
+
+    .cards-valores {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card {
+        width: 40%;
+        /* Define a largura fixa para todos os cards */
+        height: 20vh;
+        /* Altura fixa para manter o mesmo tamanho */
+        margin-bottom: 10px;
+    }
+
+    .card-front,
+    .card-back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        color: var(--room-color);
+        background: linear-gradient(180deg, #FE5F55 0%, #D65048 43.5%);
+        border-radius: 8px;
+        position: absolute;
+        backface-visibility: hidden;
+        transition: transform 0.6s ease;
+        font-family: var(--secondary-font);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-front {
+        transform: rotateY(0deg);
+    }
+
+    .card-back {
+        transform: rotateY(180deg);
+    }
+
+    .card.flipped .card-front {
+        transform: rotateY(180deg);
+    }
+
+    .card.flipped .card-back {
+        transform: rotateY(0deg);
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 1.2;
+        color: var(--room-color)
+    }
+
+    .card-back p {
+        font-size: 0.8rem;
+        color: var(--room-color);
+        margin: 0;
+        text-align: center;
+    }
+
+    .icon-container {
+        font-size: 3vh;
+        margin-bottom: 0;
+    }
+
+    .card-back ul {
+        padding: 0;
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    .card-back li {
+        font-size: 0.8rem;
+    }
+
+    .card-equipe {
+        background: linear-gradient(90deg, #87DEF8 0%, #3EBEE5 100%);
+        border-radius: 40px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 30px;
+        margin-bottom: 60px;
+    }
+
+    .card-equipe h2 {
+        color: #06408B;
+        font-family: var(--primary-font);
+        font-size: 1.7rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    .card-equipe p {
+        color: var(--third-color);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .equipe-desenvolvimento {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .card-neuron {
+        background-color: var(--fifth-color);
+        border-radius: 40px;
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 55px;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .card-neuron h2 {
+        color: var(--room-color);
+        font-family: var(--primary-font);
+        font-size: 2.3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-neuron p {
+        font-family: var(--secondary-font);
+        font-size: 1.6rem;
+        line-height: 1.3;
+        margin: 0;
+        color: var(--room-color);
+    }
+
+    .card-neuron img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* */
+@media (min-width: 421px) and (max-width: 576px) {
+    .sobre-nos h1 {
+        text-align: center;
+        color: var(--third-color);
+        font-family: Inter;
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: normal;
+        margin-top: 60px;
+    }
+
+    .sobre-nos-subtitulo {
+        color: var(--third-color);
+        font-family: Poppins;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 50px;
+        margin-bottom: 0px;
+    }
+
+    .sobre-nos-imagens {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .bonecos-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nossos-valores {
+        margin-bottom: 100px;
+    }
+
+    .titulo-valores {
+        font-size: 2.8rem;
+        color: var(--third-color);
+        font-family: Inter;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .cards-valores {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card {
+        width: 45%;
+        /* Define a largura fixa para todos os cards */
+        height: 30vh;
+        /* Altura fixa para manter o mesmo tamanho */
+        margin-bottom: 10px;
+    }
+
+    .card-front,
+    .card-back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        color: var(--room-color);
+        background: linear-gradient(180deg, #FE5F55 0%, #D65048 43.5%);
+        border-radius: 8px;
+        position: absolute;
+        backface-visibility: hidden;
+        transition: transform 0.6s ease;
+        font-family: var(--secondary-font);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-front {
+        transform: rotateY(0deg);
+    }
+
+    .card-back {
+        transform: rotateY(180deg);
+    }
+
+    .card.flipped .card-front {
+        transform: rotateY(180deg);
+    }
+
+    .card.flipped .card-back {
+        transform: rotateY(0deg);
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+
+    .card h3 {
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.2;
+        color: var(--room-color)
+    }
+
+    .card-back p {
+        font-size: 1.2rem;
+        color: var(--room-color);
+        margin: 0;
+        text-align: center;
+    }
+
+    .icon-container {
+        font-size: 4vh;
+        margin-bottom: 0;
+    }
+
+    .card-back ul {
+        padding: 0;
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    .card-back li {
+        font-size: 1.2rem;
+    }
+
+    .card-equipe {
+        background: linear-gradient(90deg, #87DEF8 0%, #3EBEE5 100%);
+        border-radius: 40px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 8px;
+        margin-bottom: 60px;
+    }
+
+    .card-equipe h2 {
+        color: #06408B;
+        font-family: var(--primary-font);
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    .card-equipe p {
+        color: var(--third-color);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.7rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .equipe-desenvolvimento {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 110px;
+    }
+
+    .card-neuron {
+        background-color: var(--fifth-color);
+        border-radius: 40px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .card-neuron h2 {
+        color: var(--room-color);
+        font-family: var(--primary-font);
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-neuron p {
+        font-family: var(--secondary-font);
+        font-size: 1.2rem;
+        line-height: 1.3;
+        margin: 0;
+        color: var(--room-color);
+    }
+
+    .card-neuron img {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .sobre-nos h1 {
+        text-align: center;
+        color: var(--third-color);
+        font-family: Inter;
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: normal;
+        margin-top: 60px;
+    }
+
+    .sobre-nos-subtitulo {
+        color: var(--third-color);
+        font-family: Poppins;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 50px;
+        margin-bottom: 0px;
+    }
+
+    .sobre-nos-imagens {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .bonecos-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nossos-valores {
+        margin-bottom: 100px;
+    }
+
+    .titulo-valores {
+        font-size: 3.3rem;
+        color: var(--third-color);
+        font-family: Inter;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .cards-valores {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card {
+        width: 40%;
+        /* Define a largura fixa para todos os cards */
+        height: 28vh;
+        /* Altura fixa para manter o mesmo tamanho */
+        margin-bottom: 10px;
+    }
+
+    .card-front,
+    .card-back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        color: var(--room-color);
+        background: linear-gradient(180deg, #FE5F55 0%, #D65048 43.5%);
+        border-radius: 8px;
+        position: absolute;
+        backface-visibility: hidden;
+        transition: transform 0.6s ease;
+        font-family: var(--secondary-font);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-front {
+        transform: rotateY(0deg);
+    }
+
+    .card-back {
+        transform: rotateY(180deg);
+    }
+
+    .card.flipped .card-front {
+        transform: rotateY(180deg);
+    }
+
+    .card.flipped .card-back {
+        transform: rotateY(0deg);
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+
+    .card h3 {
+        font-size: 2.2rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .card p {
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.2;
+        color: var(--room-color)
+    }
+
+    .card-back p {
+        font-size: 1.3rem;
+        color: var(--room-color);
+        margin: 0;
+        text-align: center;
+    }
+
+    .icon-container {
+        font-size: 5vh;
+        margin-bottom: 0;
+    }
+
+    .card-back ul {
+        padding: 0;
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    .card-back li {
+        font-size: 1.3rem;
+    }
+
+    .card-equipe {
+        background: linear-gradient(90deg, #87DEF8 0%, #3EBEE5 100%);
+        border-radius: 40px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 50px;
+        margin-bottom: 60px;
+    }
+
+    .card-equipe h2 {
+        color: #06408B;
+        font-family: var(--primary-font);
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    .card-equipe p {
+        color: var(--third-color);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.7rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .equipe-desenvolvimento {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 110px;
+    }
+
+    .card-neuron {
+        background-color: var(--fifth-color);
+        border-radius: 40px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .card-neuron h2 {
+        color: var(--room-color);
+        font-family: var(--primary-font);
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-neuron p {
+        font-family: var(--secondary-font);
+        font-size: 1.2rem;
+        line-height: 1.3;
+        margin: 0;
+        color: var(--room-color);
+    }
+
+    .card-neuron img {
+        width: 40%;
+        height: 40%;
+    }
 }

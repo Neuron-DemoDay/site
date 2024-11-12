@@ -22,7 +22,7 @@
     text-align: center;
 }
 
-.form-container {
+.contato-form-container {
     width: 100%;
     padding: 30px; /* Aumenta o padding dentro do formulário */
     border-radius: 8px;
@@ -36,9 +36,9 @@ form {
     align-items: center;
 }
 
-.nome,
-.email,
-.mensagem {
+.contato-nome,
+.contato-email,
+.contato-mensagem {
     margin-bottom: 1.5rem; /* Aumenta o espaçamento entre os campos */
     display: flex;
     flex-direction: column;
@@ -74,13 +74,13 @@ textarea {
     min-height: 150px; /* Aumenta a altura mínima da área de texto */
 }
 
-.botao {
+.contato-botao {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-button {
+.contato-botao button {
     padding: 16px 28px;
     font-size: 1.2rem;
     background: rgba(180, 15, 231, 0.56);
@@ -94,11 +94,11 @@ button {
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-button:hover {
+.contato-botao button:hover {
     background-color: rgba(180, 15, 231, 0.7);
     transform: scale(1.05);
 }
 
-button:active {
+.contato-botao button:active {
     background-color: rgba(180, 15, 231, 0.8);
 }

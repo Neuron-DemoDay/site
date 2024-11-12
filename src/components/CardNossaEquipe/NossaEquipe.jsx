@@ -11,7 +11,7 @@ const NossaEquipe = ({ nome, cargo, cargo2, linkedin, github, corNome, corCargo,
                 </div>
                 <h2 style={{ color: corNome }}>{nome}</h2>
                 <h3 style={{ color: corCargo }}>{cargo}</h3>
-                <p style={{ color: corCargo2 }}>{cargo2}</p>
+                <p className='cargo2' style={{ color: corCargo2 }}>{cargo2}</p>
                 <div className="social-media">
                     <div className="social-item linkedin">
                         <FaLinkedin className="icon" />

@@ -5,18 +5,18 @@ function Contato() {
     return (
         <div className='contato'>
             <h2>ENTRE EM CONTATO CONOSCO</h2>
-            <div className='form-container'>
+            <div className='contato-form-container'>
                 <form>
-                    <div className='nome'>
+                    <div className='contato-nome'>
                         <input type="text" placeholder='Nome completo' />
                     </div>
-                    <div className='email'>
+                    <div className='contato-email'>
                         <input type="text" placeholder='Email' />
                     </div>
-                    <div className='mensagem'>
+                    <div className='contato-mensagem'>
                         <textarea placeholder='Mensagem'></textarea>
                     </div>
-                    <div className='campo botao'>
+                    <div className='contato-botao'>
                         <button type="submit">Enviar</button>
                     </div>
                 </form>

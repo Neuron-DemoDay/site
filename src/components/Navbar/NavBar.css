@@ -159,14 +159,14 @@
   }
 
   .navbar-title {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   /* Ajuste para evitar que "Sobre Nós" quebre em duas linhas */
   .nav-list li {
     color: var(--third-color);
     font-family: var(--third-font);
-    font-size: 1.3rem; /* Fonte um pouco menor, se necessário */
+    font-size: 1.6rem; /* Fonte um pouco menor, se necessário */
     font-weight: 600;
     margin: 0 1.5vw;
     cursor: pointer;
@@ -176,7 +176,7 @@
 
   /* Reduzindo o botão de login */
   .nav-login button {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 1vh 2.5vw;
   }
 }
@@ -225,3 +225,4 @@
     padding: 1.5vh 2vw;
   }
 }
+

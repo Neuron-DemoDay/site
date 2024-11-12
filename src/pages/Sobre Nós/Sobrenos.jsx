@@ -35,7 +35,6 @@ const SobreNos = () => {
 
     return (
         <div>
-            <Navbar />
             <section className="sobre-nos">
                 <h1>SOBRE NÓS</h1>
                 <p className='sobre-nos-subtitulo'>
@@ -46,7 +45,7 @@ const SobreNos = () => {
                 </div>
                 <section className="nossos-valores">
                     <h2 className="titulo-valores">O QUE NOS MOVE</h2>
-                    <div className="cards-container">
+                    <div className="cards-valores">
                         {[
                             { title: 'MISSÃO', icon: <FaBullseye />, text: 'Transformar a educação global.', backText: 'Proporcionar oportunidades educacionais personalizadas e inclusivas, utilizando tecnologias avançadas para democratizar o aprendizado e atender às necessidades de todos.' },
                             { title: 'VISÃO', icon: <FaEye />, text: 'Ser a principal plataforma educacional do mundo.', backText: 'Ser uma plataforma reconhecida por democratizar o aprendizado e conectar estudantes a oportunidades internacionais, impactando positivamente o futuro de jovens em todo o mundo.' },
@@ -89,100 +88,97 @@ const SobreNos = () => {
                     </p>
                 </section>
                 <div className='equipe-desenvolvimento'>
-                    <h3>NOSSO TIME DE DESENVOLVIMENTO</h3>
-                    <div className='equipe-container'>
-                        <div className='time1'>
-                            < NossaEquipe
-                                nome="Vinicius Santana"
-                                cargo="Desenvolvedor"
-                                cargo2="Back-end"
-                                linkedin={"viniciussantana007"}
-                                github={"viniciusspereira007"}
-                                corDeFundo={""}
-                                imagem={Vinicius}
-                            />
-                            < NossaEquipe
-                                nome="Stefany Gomes"
-                                cargo="Desenvolvedora Front-end/"
-                                cargo2="UI & UX Designer"
-                                linkedin={"stefany-gomes"}
-                                github={"marstefany"}
-                                corDeFundo="rgba(180, 15, 231, 0.29)"
-                                corDaBorda="#B40FE7"
-                                corNome={"#B40FE7"}
-                                corCargo={"#590E70"}
-                                corCargo2={"#590E70"}
-                                imagem={Stefany}
-                            />
-                            < NossaEquipe
-                                nome="Guilherme Campelo"
-                                cargo="Desenvolvedor"
-                                cargo2="Scrum Master/IA"
-                                linkedin={"guilherme-campelo"}
-                                github={"campelo3110"}
-                                corDeFundo="rgba(254, 95, 85, 0.29)"
-                                corDaBorda={"#FE5F55"}
-                                corNome={"#FE5F55"}
-                                corCargo={"#CB534C"}
-                                corCargo2={"#CB534C"}
-                                imagem={Campelo}
-                            />
-                            < NossaEquipe
-                                nome="Jenifer Carvalho"
-                                cargo="Desenvolvedora"
-                                cargo2="Full-Stack/Financeiro"
-                                linkedin={"jenifercarvalhomarques"}
-                                github={"jenifercmarques"}
-                                corDeFundo={""}
-                                imagem={Jenifer}
-                            />
-                        </div>
-                        <div className='time2'>
-                            < NossaEquipe
-                                nome="Guilherme Macedo"
-                                cargo="Desenvolvedor Front-end/"
-                                cargo2="UI & UX Designer"
-                                linkedin={"guilhermemagalhães28"}
-                                github={"gui-macedo-7"}
-                                corDeFundo="rgba(254, 95, 85, 0.29)"
-                                corDaBorda="#FE5F55"
-                                corNome={"#FE5F55"}
-                                corCargo={"#CB534C"}
-                                corCargo2={"#CB534C"}
-                                imagem={Macedo}
-                            />
-                            < NossaEquipe
-                                nome="Caio Eduardo"
-                                cargo="Desenvolvedor"
-                                cargo2="Full-Stack"
-                                linkedin={"caioeduardodesouza"}
-                                github={"caiodusouza"}
-                                corDeFundo={""}
-                                imagem={Caio}
-                            />
-                            < NossaEquipe
-                                nome="Gian Bueno"
-                                cargo="Desenvolvedor"
-                                cargo2="Back-end"
-                                linkedin={"gian-luiggi-bueno"}
-                                github={"gianlb"}
-                                corDeFundo="rgba(180, 15, 231, 0.29)"
-                                corDaBorda="#B40FE7"
-                                corNome={"#B40FE7"}
-                                corCargo={"#590E70"}
-                                corCargo2={"#590E70"}
-                                imagem={Gian}
-                            />
-                            < NossaEquipe
-                                nome="Lucas Santiago"
-                                cargo="P.O/Desenvolvedor"
-                                cargo2="Back-end"
-                                linkedin={"lucas-santiago-de-oliveira"}
-                                github={"lucassantiago0"}
-                                corDeFundo={""}
-                                imagem={Lucas}
-                            />
-                        </div>
+                    <div className='time1'>
+                        < NossaEquipe
+                            nome="Vinicius Santana"
+                            cargo="Desenvolvedor"
+                            cargo2="Back-end"
+                            linkedin={"viniciussantana007"}
+                            github={"viniciusspereira007"}
+                            corDeFundo={""}
+                            imagem={Vinicius}
+                        />
+                        < NossaEquipe
+                            nome="Stefany Gomes"
+                            cargo="Desenvolvedora Front-end/"
+                            cargo2="UI & UX Designer"
+                            linkedin={"stefany-gomes"}
+                            github={"marstefany"}
+                            corDeFundo="rgba(180, 15, 231, 0.29)"
+                            corDaBorda="#B40FE7"
+                            corNome={"#B40FE7"}
+                            corCargo={"#590E70"}
+                            corCargo2={"#590E70"}
+                            imagem={Stefany}
+                        />
+                        < NossaEquipe
+                            nome="Guilherme Campelo"
+                            cargo="Desenvolvedor"
+                            cargo2="Scrum Master/IA"
+                            linkedin={"guilherme-campelo"}
+                            github={"campelo3110"}
+                            corDeFundo="rgba(254, 95, 85, 0.29)"
+                            corDaBorda={"#FE5F55"}
+                            corNome={"#FE5F55"}
+                            corCargo={"#CB534C"}
+                            corCargo2={"#CB534C"}
+                            imagem={Campelo}
+                        />
+                        < NossaEquipe
+                            nome="Jenifer Carvalho"
+                            cargo="Desenvolvedora"
+                            cargo2="Full-Stack/Financeiro"
+                            linkedin={"jenifercarvalhomarques"}
+                            github={"jenifercmarques"}
+                            corDeFundo={""}
+                            imagem={Jenifer}
+                        />
+                    </div>
+                    <div className='time2'>
+                        < NossaEquipe
+                            nome="Guilherme Macedo"
+                            cargo="Desenvolvedor Front-end/"
+                            cargo2="UI & UX Designer"
+                            linkedin={"guilhermemagalhães28"}
+                            github={"gui-macedo-7"}
+                            corDeFundo="rgba(254, 95, 85, 0.29)"
+                            corDaBorda="#FE5F55"
+                            corNome={"#FE5F55"}
+                            corCargo={"#CB534C"}
+                            corCargo2={"#CB534C"}
+                            imagem={Macedo}
+                        />
+                        < NossaEquipe
+                            nome="Caio Eduardo"
+                            cargo="Desenvolvedor"
+                            cargo2="Full-Stack"
+                            linkedin={"caioeduardodesouza"}
+                            github={"caiodusouza"}
+                            corDeFundo={""}
+                            imagem={Caio}
+                        />
+                        < NossaEquipe
+                            nome="Gian Bueno"
+                            cargo="Desenvolvedor"
+                            cargo2="Back-end"
+                            linkedin={"gian-luiggi-bueno"}
+                            github={"gianlb"}
+                            corDeFundo="rgba(180, 15, 231, 0.29)"
+                            corDaBorda="#B40FE7"
+                            corNome={"#B40FE7"}
+                            corCargo={"#590E70"}
+                            corCargo2={"#590E70"}
+                            imagem={Gian}
+                        />
+                        < NossaEquipe
+                            nome="Lucas Santiago"
+                            cargo="P.O/Desenvolvedor"
+                            cargo2="Back-end"
+                            linkedin={"lucassantiagodeoliveira"}
+                            github={"lucassantiago0"}
+                            corDeFundo={""}
+                            imagem={Lucas}
+                        />
                     </div>
                 </div>
                 <div className="card-neuron">
@@ -195,10 +191,9 @@ const SobreNos = () => {
                     <img src={neuronzinho} alt="Imagem representativa de Neuron" />
                 </div>
                 <div>
-                    <Contato />
+                    {/* <Contato /> */}
                 </div>
                 <div>
-                    <Footer />
                 </div>
             </section>
         </div>

@@ -1,5 +1,3 @@
-// NAVBAR JSX
-
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import './NavBar.css';

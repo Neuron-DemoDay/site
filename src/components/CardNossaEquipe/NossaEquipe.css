@@ -1,12 +1,6 @@
-.container {
-    display: flex;
-    justify-content: center;
-    height: 60vh;
-}
-
 .card-time {
-    width: 45vh;
-    height: 45vh;
+    width: 38vh;
+    height: 38vh;
     border-radius: 30px;
     border: 4px solid #0F6DE7;
     background: rgba(15, 109, 231, 0.29);
@@ -22,8 +16,8 @@
 .circle {
     position: absolute;
     top: -25%;
-    width: 24vh;
-    height: 24vh;
+    width: 18vh;
+    height: 18vh;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid #0F6DE7;
@@ -39,51 +33,58 @@
 .card-time h2 {
     color: #0F6DE7;
     font-family: Inter, sans-serif;
-    font-size: 23px;
+    font-size: 1.6rem;
     font-weight: 800;
-    margin-top: 15px;
+    position: relative;
+    bottom: 25px;
 }
 
 .card-time h3 {
     color: #0B4591;
     font-family: Inter, sans-serif;
-    font-size: 19px;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin-top: 15px;
+    position: relative;
+    bottom: 15px;
 }
 
-.card-time p {
+.card-time .cargo2 {
     color: #0B4591;
     font-family: Inter, sans-serif;
-    font-size: 19px;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin-top: 0px;
+    position: relative;
+    bottom: 15px;
 }
 
 .social-media {
-    margin-top: auto;
     display: flex;
     flex-direction: column;
+    width: 80%;
     gap: 10px;
-    width: 70%;
-    margin-bottom: 25px;
 }
 
 .social-media p {
-    color: #fff;
-    font-size: 13px;
+    color: white;
+    font-size: 0.8rem;
+    font-family: Poppins;
+    font-weight: 500;
 }
 
 .social-item {
     display: flex;
     align-items: center;
-    justify-content: start;
-    padding: 6px;
+    padding: 7px;
     border-radius: 25px;
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 15px;
-    font-weight: 500;
+    color: white;
+}
+
+.social-item p {
+    margin-left: 15px;
+}
+
+.icon {
+    font-size: 1.2rem;
 }
 
 .linkedin {
@@ -94,17 +95,340 @@
     background-color: #000;
 }
 
-.icon {
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-.time1 {
-    display: flex;
-    gap: 30px;
-}
-
+.time1,
 .time2 {
     display: flex;
     gap: 30px;
+}
+
+.time1 {
+    margin-bottom: -35px;
+}
+
+/* */
+@media (max-width: 420px) {
+
+    .card-time {
+        width: 30vh;
+        height: 30vh;
+        border-radius: 30px;
+        border: 4px solid #0F6DE7;
+        background: rgba(15, 109, 231, 0.29);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        position: relative;
+        margin-top: 15vh;
+    }
+
+    .circle {
+        position: absolute;
+        top: -25%;
+        width: 14vh;
+        height: 14vh;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #0F6DE7;
+    }
+
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .card-time h2 {
+        color: #0F6DE7;
+        font-family: Inter, sans-serif;
+        font-size: 2rem;
+        font-weight: 800;
+        position: relative;
+        top: 0px;
+    }
+
+    .card-time h3 {
+        color: #0B4591;
+        font-family: Inter, sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        position: relative;
+        top: 0px;
+    }
+
+    .card-time .cargo2 {
+        color: #0B4591;
+        font-family: Inter, sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        position: relative;
+        top: 0px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 10px;
+    }
+
+    .social-media p {
+        color: white;
+        font-size: 1rem;
+        font-family: Poppins;
+        font-weight: 500;
+    }
+
+    .social-item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 20px;
+        padding: 7px;
+        border-radius: 25px;
+        color: white;
+    }
+
+    .social-item p {
+        margin-left: 15px;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+
+    .linkedin {
+        background-color: #0A66C2;
+    }
+
+    .github {
+        background-color: #000;
+    }
+    
+    .time1,
+    .time2 {
+        display: block;
+    }
+
+    .time1 {
+        margin-bottom: 0px;
+    }
+}
+
+
+/* */
+@media (min-width: 421px) and (max-width: 576px) {
+    .card-time {
+        width: 100%;
+        height: 40vh;
+        border-radius: 30px;
+        border: 4px solid #0F6DE7;
+        background: rgba(15, 109, 231, 0.29);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        position: relative;
+    }
+
+    .circle {
+        position: absolute;
+        top: -25%;
+        width: 19vh;
+        height: 19vh;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #0F6DE7;
+    }
+
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .card-time h2 {
+        color: #0F6DE7;
+        font-family: Inter, sans-serif;
+        font-size: 2.3rem;
+        padding: 20px;
+        font-weight: 800;
+        position: relative;
+        top: 20px;
+    }
+
+    .card-time h3 {
+        color: #0B4591;
+        font-family: Inter, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        position: relative;
+        top: 30px;
+    }
+
+    .card-time .cargo2 {
+        color: #0B4591;
+        font-family: Inter, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        position: relative;
+        top: 30px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 80px;
+        width: 80%;
+        gap: 10px;
+    }
+
+    .social-media p {
+        color: white;
+        font-size: 1.1rem;
+        font-family: Poppins;
+        font-weight: 500;
+    }
+
+    .social-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 25px;
+        color: white;
+    }
+
+    .icon {
+        font-size: 1.7rem;
+    }
+
+    .linkedin {
+        background-color: #0A66C2;
+    }
+
+    .github {
+        background-color: #000;
+    }
+
+    .time1,
+    .time2 {
+        display: block;
+        gap: 30px;
+    }
+
+    .time1 {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .card-time {
+        width: 100%;
+        height: 40vh;
+        border-radius: 30px;
+        border: 4px solid #0F6DE7;
+        background: rgba(15, 109, 231, 0.29);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        position: relative;
+    }
+
+    .circle {
+        position: absolute;
+        top: -25%;
+        width: 19vh;
+        height: 19vh;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #0F6DE7;
+    }
+
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .card-time h2 {
+        color: #0F6DE7;
+        font-family: Inter, sans-serif;
+        font-size: 2.3rem;
+        padding: 20px;
+        font-weight: 800;
+        position: relative;
+        top: 20px;
+    }
+
+    .card-time h3 {
+        color: #0B4591;
+        font-family: Inter, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        position: relative;
+        top: 30px;
+    }
+
+    .card-time .cargo2 {
+        color: #0B4591;
+        font-family: Inter, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        position: relative;
+        top: 30px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 80px;
+        width: 80%;
+        gap: 10px;
+    }
+
+    .social-media p {
+        color: white;
+        font-size: 1.1rem;
+        font-family: Poppins;
+        font-weight: 500;
+    }
+
+    .social-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 25px;
+        color: white;
+    }
+
+    .icon {
+        font-size: 1.7rem;
+    }
+
+    .linkedin {
+        background-color: #0A66C2;
+    }
+
+    .github {
+        background-color: #000;
+    }
+
+    .time1,
+    .time2 {
+        display: block;
+        gap: 30px;
+    }
+
+    .time1 {
+        margin-bottom: 0px;
+    }
 }
