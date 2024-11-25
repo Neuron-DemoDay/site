@@ -193,8 +193,6 @@ const SobreNos = () => {
                 <div>
                     {/* <Contato /> */}
                 </div>
-                <div>
-                </div>
             </section>
         </div>
     );

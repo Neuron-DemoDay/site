@@ -219,14 +219,11 @@
 
 
 /* */
-@media (min-width: 421px) and (max-width: 576px) {
+@media (max-width: 576px) {
+    
     .card-time {
-        width: 100%;
-        height: 40vh;
-        border-radius: 30px;
-        border: 4px solid #0F6DE7;
-        background: rgba(15, 109, 231, 0.29);
-        text-align: center;
+        width: 30vh;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -236,12 +233,10 @@
 
     .circle {
         position: absolute;
-        top: -25%;
-        width: 19vh;
-        height: 19vh;
-        border-radius: 50%;
+        width: 16vh;
+        height: 16vh;
         overflow: hidden;
-        border: 3px solid #0F6DE7;
+        top: -25%;
     }
 
     .circle img {
@@ -250,49 +245,30 @@
         object-fit: cover;
     }
 
-
     .card-time h2 {
-        color: #0F6DE7;
-        font-family: Inter, sans-serif;
-        font-size: 2.3rem;
-        padding: 20px;
-        font-weight: 800;
+        font-size: 1.8rem;
+        padding: 10px;
         position: relative;
-        top: 20px;
+        top: 0px;
     }
 
-    .card-time h3 {
-        color: #0B4591;
-        font-family: Inter, sans-serif;
-        font-size: 1.8rem;
-        font-weight: 500;
+    .card-time h3, .card-time .cargo2 {
+        font-size: 1.6rem;
         position: relative;
-        top: 30px;
-    }
-
-    .card-time .cargo2 {
-        color: #0B4591;
-        font-family: Inter, sans-serif;
-        font-size: 1.8rem;
-        font-weight: 500;
-        position: relative;
-        top: 30px;
+        top: 0px;
     }
 
     .social-media {
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 80px;
-        width: 80%;
-        gap: 10px;
+        top: 25px;
+        width: 25vh;
+        gap: 5px;
     }
 
     .social-media p {
-        color: white;
-        font-size: 1.1rem;
-        font-family: Poppins;
-        font-weight: 500;
+        font-size: 0.9rem;
     }
 
     .social-item {
@@ -300,132 +276,15 @@
         align-items: center;
         padding: 10px;
         border-radius: 25px;
-        color: white;
     }
 
     .icon {
-        font-size: 1.7rem;
-    }
-
-    .linkedin {
-        background-color: #0A66C2;
-    }
-
-    .github {
-        background-color: #000;
+        font-size: 1.4rem;
     }
 
     .time1,
     .time2 {
         display: block;
-        gap: 30px;
-    }
-
-    .time1 {
-        margin-bottom: 0px;
-    }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-    .card-time {
-        width: 100%;
-        height: 40vh;
-        border-radius: 30px;
-        border: 4px solid #0F6DE7;
-        background: rgba(15, 109, 231, 0.29);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 100px;
-        position: relative;
-    }
-
-    .circle {
-        position: absolute;
-        top: -25%;
-        width: 19vh;
-        height: 19vh;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 3px solid #0F6DE7;
-    }
-
-    .circle img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-    .card-time h2 {
-        color: #0F6DE7;
-        font-family: Inter, sans-serif;
-        font-size: 2.3rem;
-        padding: 20px;
-        font-weight: 800;
-        position: relative;
-        top: 20px;
-    }
-
-    .card-time h3 {
-        color: #0B4591;
-        font-family: Inter, sans-serif;
-        font-size: 1.8rem;
-        font-weight: 500;
-        position: relative;
-        top: 30px;
-    }
-
-    .card-time .cargo2 {
-        color: #0B4591;
-        font-family: Inter, sans-serif;
-        font-size: 1.8rem;
-        font-weight: 500;
-        position: relative;
-        top: 30px;
-    }
-
-    .social-media {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 80px;
-        width: 80%;
-        gap: 10px;
-    }
-
-    .social-media p {
-        color: white;
-        font-size: 1.1rem;
-        font-family: Poppins;
-        font-weight: 500;
-    }
-
-    .social-item {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        border-radius: 25px;
-        color: white;
-    }
-
-    .icon {
-        font-size: 1.7rem;
-    }
-
-    .linkedin {
-        background-color: #0A66C2;
-    }
-
-    .github {
-        background-color: #000;
-    }
-
-    .time1,
-    .time2 {
-        display: block;
-        gap: 30px;
     }
 
     .time1 {
